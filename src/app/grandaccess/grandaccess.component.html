@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+   
+</head>
+    
+       
+<body>
+  <!-- <div class="container"> -->
+  <div class="descriptionModal">
+    <form [formGroup]="grandAccess" id="grandAccess">
+
+    <div class="topnav" id="myTopnav">
+        <div style="margin: 0; float: none; text-align:center;"> 
+            <img src="./../assets/left.png" alt="logoEmbajador" width="30" height="30" style="text-align: left;
+            position: relative;
+            left: -190px;
+            top: 30px;"> 
+            <img src="./../assets/right.png" alt="logoEmbajador" width="30" height="30" style="text-align: right;
+               position: relative;
+    right: -170px;
+    top: 30px;"> 
+
+            <h2 class="title" style="color:white;font-size: 13px;
+            position: relative;
+            size: 20px;
+    top: 2px;
+    left: 10px;
+    font-size: 35px;"><b>DocuWallet</b></h2></div>
+            
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="topnav" id="myTopnav1" style="background:aliceblue;height:85px">
+        <div style="margin: 0; float: none; text-align:left; background:aliceblue">
+            <img src="./../assets/mydocument.png" alt="logoEmbajador" width="50" height="50"> </div>
+            <h2 class="title" style="color:#064BFC;font-size: 13px;
+            position: relative;
+            top: -1px;
+           left: -180px;"><b>My Document</b></h2>
+
+            <img src="./../assets/sharebyme.png" alt="logoEmbajador" width="50" height="50" style="position:relative;top:-65px;left:100px;"> 
+            <h2 class="title" style="color:#064BFC;font-size: 13px;
+            position: relative;
+          top: -65px;
+           left: -90px;"><b>shared by me</b></h2>
+            <img src="./../assets/requestdocument.png" alt="logoEmbajador" width="50" height="50"style="position: relative;
+            top: -130px;
+            left: 190px;"> 
+            <h2 class="title" style="color:#064BFC;font-size: 13px;
+            position: relative;
+            top: -130px;
+            left: 190px;
+            width: min-content;"><b>Reaquest Documents</b></h2>
+            <img src="./../assets/pending.png" alt="logoEmbajador" width="50" height="50"style="position: relative;
+           top: -210px;
+           left: 290px;"> 
+            <h2 class="title" style="color:#064BFC;font-size: 13px;
+            position: relative;
+            top: -210px;
+            left: 291px;
+            width: min-content;"><b>Pending Documents</b></h2>
+              <img src="./../assets/upload.png" alt="logoEmbajador" width="50" height="50"style="position: relative;
+                top: -290px;
+                left: 390px;"> 
+               <h2 class="title" style="color:#064BFC;font-size: 13px;
+               position: relative;
+               top : -290px;
+               left: 382px;
+               width: min-content;"><b>upload Documents</b></h2>
+
+       
+           
+        <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+      <script>
+        function myFunction1() {
+          var x = document.getElementById("myTopnav1");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+
+   <div class="container">
+      <div class="row">
+        <div class="topnav" id="myTopnav2"style="background:lightgrey;height:40px">
+            <div style="margin: 0; float: none; text-align:center; "> 
+                <h2 class="title" style="color:white;font-size: 13px;
+                position: relative;
+                size: 20px;
+              top: 7px;
+              left: -170px;
+              width: 600px;
+              color:blue;
+            font-size: 20px;">Selected Documents</h2></div>
+               
+                <a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+        <script>
+            function myFunction2() {
+              var x = document.getElementById("myTopnav2");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+            </div><br>
+            <div style="margin: 0; float: none;position: relative;top: 4px;
+            right: -30px;"><img src="./../assets/pdf.png" alt="logoEmbajador" width="50" height="50"> </div>
+            <h2 class="title" style="color:black;font-size: 13px;
+            position: relative;
+            top: 12px;
+            left: 40px;
+            font-size: 12px"><b>Idcopy.pdf</b></h2>  
+            <br><br>
+            <div style="margin: 0; float: none;position: relative;
+                top: 60px;
+               right: 81px;"><img src="./../assets/pdf.png" alt="logoEmbajador" width="50" height="50"> </div>
+            <h2 class="title" style="color:black;font-size: 13px;
+            position: relative;
+            top: 80px;
+            left: -70px;
+            font-size: 12px"><b>proof Of Residence</b></h2> <br><br><br><br><br><br>
+             
+            <div class="topnav" id="myTopnav3"style="background:lightgrey;height:40px">
+              <div style="margin: 0; float: none; text-align:center; "> 
+                 <h2 class="title" style="color:white;font-size: 13px;
+                 position: relative;
+                 size: 20px;
+                 top: 7px;
+                left: -100px;
+                 width: 600px;
+                 color:blue;
+                font-size: 20px;">grant verification document access to</h2></div>
+               <a href="javascript:void(0);" class="icon" onclick="myFunction3()">
+               <i class="fa fa-bars"></i>
+            </a><script>
+        function myFunction3() {
+        var x = document.getElementById("myTopnav3");
+        if (x.className === "topnav") {
+         x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script></div>
+           <br><br><br><br><br>
+           <div class="name"style="color: #0686FC;
+           position: relative;
+           left: 20px;
+           top: 20px;
+           font-size:13px"><b>Name</b></div>
+           <br><br>
+           <div class="value">
+             <div class="input-group">
+               <input class="input--style-5" style="width:unset;position: relative;    top: 40px;
+               left: -20px;" type="text" name="Name" formControlName="Name">
+             </div>
+           </div>
+           <br><br>
+           <div class="name"style="color: #0686FC;
+           position: relative;
+           left: -200px;
+           top: 80px;
+           font-size:13px"><b>Email Address</b></div>
+           <br>
+           <div class="value">
+             <div class="input-group">
+               <input class="input--style-5" style="width:unset;position: relative;top: 10px; left: 20px;" type="text" name="receiver" formControlName="receiver">
+             </div>
+           </div><br><br>
+           <div class="name"style="color: #0686FC;
+           position: relative;
+           left: -160px;
+           top: 60px;
+           font-size:13px"><b>Phone Number</b></div>
+           <br>
+           <div class="value">
+             <div class="input-group">
+               <input class="input--style-5" style="width:unset;position: relative;
+               top: 100px;
+               left: -250px;" type="text" name="phoneNo" formControlName="phoneNo">
+             </div>
+           </div>
+           <br><br><br><br><br><br><br>
+             
+           <div class="topnav" id="myTopnav4"style="background:lightgrey;height:40px">
+             <div style="margin: 0; float: none; text-align:center; "> 
+                <h2 class="title" style="color:white;font-size: 13px;
+                position: relative;
+                size: 20px;
+                top: 7px;
+               left: -180px;
+                width: 600px;
+                color:blue;
+               font-size: 20px;">permission setting</h2></div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction4()">
+              <i class="fa fa-bars"></i>
+           </a><script>
+       function myFunction4() {
+       var x = document.getElementById("myTopnav4");
+       if (x.className === "topnav") {
+        x.className += " responsive";
+     } else {
+       x.className = "topnav";
+     }
+   }
+   </script></div>
+   <br><br>
+   <div class="name"style="color: #0686FC;
+   position: relative;
+   left: 20px;
+   top: 20px;
+   font-size:13px"><b>Access duration</b></div>
+   <br>
+   <select name="AccessDuration" id="AccessDuration" style="background:transparent;width:100px;border-color:#0686FC;
+       position: relative;
+       left: -80px;
+       top: 52px;" name="AccessDuration" formControlName="AccessDuration">
+       <option value="Approved"class="input-group"><h6>24 hours</h6></option>
+       <option value="Not Approved"><h6>48 hours</h6></option>
+   </select>
+   <div class="name"style="color: #0686FC;
+   position: relative;
+   left: -19px;
+    top: 20px;
+   font-size:13px"><b>Enable Document downloaded ?</b></div>
+    <div class="value">
+       <div class="input-group">
+         <input class="input--style-5" style="width:unset;position: relative;
+             top: 63px;
+            left: -210px;" type="checkbox" name="EnableDocumentDownload" formControlName="EnableDocumentDownload">
+       </div>
+     </div>
+     
+     <button style="text-align: center;
+     position: relative;left: 120px;
+background: #0686FC;
+top: 80px;" class="btn btn--radius-2 btn--red" type="submit" >grant access</button>
+
+
+
+
+
+
+
+
+
+            
+        </div>
+        <!-- <div class="col-sm-4">
+          
+        </div>
+        <div class="col-sm-4">
+    
+        </div> -->
+      
+    </div>
+    </form>
+</div>
+<!-- </div> -->
+<!-- </div> -->
+</body>
+</html>
+
